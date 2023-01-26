@@ -10,7 +10,7 @@ const call = async function () {
         row1.innerHTML =
           row1.innerHTML +
           `
-          <div class="col-4" >
+          <div class="col-3" >
           <div class="crad mb-3 border border-2" style="width: 18rem;">
           <img src="${book.img}"class="card-img-top" alt="">
           <div class="card-body">
