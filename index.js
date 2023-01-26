@@ -15,19 +15,46 @@ const call = async function () {
       firstPart.forEach((book) => {
         col1.innerHTML =
           col1.innerHTML +
-          `<div class="crad mb-3 border border-2" style="width: 18rem;"><img src="${book.img}"class="card-img-top" alt=""><div class="card-body"></div><h5 class="card-title">${book.title}</h5><p class="card-text">${book.price}€</p><a href="#" class="btn btn-primary">Skip</a></div></div>`;
+          `
+          <div class="crad mb-3 border border-2" style="width: 18rem;">
+          <img src="${book.img}"class="card-img-top" alt="">
+          <div class="card-body">
+          <h5 class="card-title">${book.title}</h5>
+          <p class="card-text">${book.price}€</p>
+          <button type="button" class="btn btn-primary">Skip</button>
+          </div>
+          </div>
+          `;
       });
       secondPart.forEach((book) => {
         col2.innerHTML =
           col2.innerHTML +
-          `<div class="crad mb-3 border border-2" style="width: 18rem;"><img src="${book.img}"class="card-img-top" alt=""><div class="card-body"></div><h5 class="card-title">${book.title}</h5><p class="card-text">${book.price}€</p><a href="#" class="btn btn-primary">Skip</a></div></div>`;
+          `
+          <div class="crad mb-3 border border-2" style="width: 18rem;">
+          <img src="${book.img}"class="card-img-top" alt="">
+          <div class="card-body">
+          <h5 class="card-title">${book.title}</h5>
+          <p class="card-text">${book.price}€</p>
+          <button type="button" class="btn btn-primary">Skip</button>
+          </div>
+          </div>
+          `;
       });
       thirdPart.forEach((book) => {
         col3.innerHTML =
           col3.innerHTML +
-          `<div class="crad mb-3 border border-2" style="width: 18rem;"><img src="${book.img}"class="card-img-top" alt=""><div class="card-body"></div><h5 class="card-title">${book.title}</h5><p class="card-text">${book.price}€</p><a href="#" class="btn btn-primary">Skip</a></div></div>`;
+          `
+          <div class="crad mb-3 border border-2" style="width: 18rem;">
+          <img src="${book.img}"class="card-img-top" alt="">
+          <div class="card-body">
+          <h5 class="card-title">${book.title}</h5>
+          <p class="card-text">${book.price}€</p>
+          <button type="button" class="btn btn-primary">Skip</button>
+          </div>
+          </div>
+          `;
       });
-      let buttons = document.querySelectorAll("a");
+      let buttons = document.querySelectorAll("button");
       buttons.forEach((a) => {
         a.addEventListener("click", () => {
           a.parentElement.remove();
